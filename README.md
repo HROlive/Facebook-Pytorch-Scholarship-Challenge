@@ -22,7 +22,8 @@ Data file structure:
 
 ## 3. What I did
 
-[Main Code](flower_classifier.ipynb)
+[Flower Classifier Notebook](flower_classifier.ipynb)
+[Notebook where I tested the effects of different image transformations](test_transforms.ipynb)
 
 1. Data loading and data preprocessing
 
@@ -34,15 +35,15 @@ Data file structure:
 
 2. Build and train the model
 
-    - Load a pre-trained network `densenet121` ([reference](https://arxiv.org/pdf/1608.06993.pdf)) and freeze parameters
-    - Define a new, untrained neural network as a classifier. The classifier has a hidden layer (ReLU activation) and an output layer (LogSoftmax activation). Assign dropout to reduce overfitting.
-    - Assign criterion (NLLLoss, negative log loss) and optimizer (Adam, adaptive moment estimation, [reference](https://arxiv.org/abs/1412.6980))
-    - Train the classifier layers using forward and backpropagation on GPU
+    - Load a pre-trained network(several different architectures tested) and freeze parameters
+    - Define a new, untrained neural network as a classifier. Assign dropout to reduce overfitting if necessary.
+    - Assign criterion (NLLLoss, negative log loss) and optimizer (Adam, adaptive moment estimation). Several other combinations tested.
+    - Train the classifier layers using forward and backpropagation on GPU and train all the model for a few more epochs by unfreezing all the model parameters to increase accuracy.
     - Track the loss and accuracy on the validation set to determine the best hyperparameters
 
 3. Use the trained classifier to predict image content
 
-    - Test trained model on testing set (93% accuracy)
+    - Test trained model (99.14% accuracy on the validation set as my final submission, this accuracy was achieved using ResNet152 after several manual hyperparemeter tunning and the notebook got a little messy and I didn't save the outputs, except for ![Flower Classifier Notebook](accuracy.png)
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
     
