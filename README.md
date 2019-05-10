@@ -43,7 +43,8 @@ Data file structure:
 
 3. Use the trained classifier to predict image content
 
-    - Test trained model (99.14% accuracy on the validation set as my final submission, this accuracy was achieved using ResNet152 after several manual hyperparemeter tunning and the notebook got a little messy and I didn't save the outputs, except for ![Flower Classifier Notebook](accuracy.png)
+    - Test trained model (99.14% accuracy on the validation set as my final submission, this accuracy was achieved using ResNet152 after several manual hyperparemeter tunning and the notebook got a little messy and I didn't save the outputs, except for
+    <img align="right" width="100" height="100" img src="images/accuracy.png">
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
     
