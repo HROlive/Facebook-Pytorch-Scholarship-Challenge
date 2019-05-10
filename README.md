@@ -44,7 +44,7 @@ Data file structure:
 3. Use the trained classifier to predict image content
 
     - Test trained model (99.14% accuracy on the validation set as my final submission, this accuracy was achieved using ResNet152 after several manual hyperparemeter tunning and the notebook got a little messy and I didn't save the outputs, except for
-    <img align="right" img src="images/accuracy.png">
+    <img align="right" width=123 height=251 img src="images/accuracy.png">
     
     
     
