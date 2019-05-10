@@ -42,8 +42,4 @@ Data file structure:
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
 
-4. Build a command line application
-
-    - See below for details
-
-<img src="assets/inference_example2.png" width=300>
+<img src="images/inference_example.png" width=300>
