@@ -22,8 +22,8 @@ Data file structure:
 
 ## 3. What I did
 
-[Flower Classifier Notebook](flower_classifier.ipynb)
-[Notebook where I tested the effects of different image transformations](test_transforms.ipynb)
+- [Flower Classifier Notebook](flower_classifier.ipynb)
+- [Notebook where I tested the effects of different image transformations](test_transforms.ipynb)
 
 1. Data loading and data preprocessing
 
@@ -45,11 +45,11 @@ Data file structure:
 
     - Test trained model (99.14% accuracy on the validation set as my final submission, this accuracy was achieved using ResNet152 after several manual hyperparemeter tunning and the notebook got a little messy and I didn't save the outputs, except for [this screenshot](images/accuracy.png).
     
-    <img align="right" width=200 height=407 img src="images/accuracy.png">
+    <img align="right" width=215 height=437 img src="images/accuracy.png">
     
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
     
 <p align="center">
-  <img src="images/inference_example.png" width=300>
+  <img src="images/inference_example.png" width=400>
 </p>
