@@ -25,6 +25,11 @@ Data file structure:
 - [Flower Classifier Notebook](flower_classifier.ipynb)
 - [Notebook where I tested the effects of different image transformations](test_transforms.ipynb)
 
+To train the model you can use different environments, including:
+
+- Google Colaboratory / Online notebook(the one I used, to take advantage of the GPU provided)
+- Local machine
+
 1. Data loading and data preprocessing
 
     - Load image data
