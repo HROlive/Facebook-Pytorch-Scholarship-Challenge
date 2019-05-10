@@ -1,7 +1,10 @@
 # Flower classification
 
 PyTorch implementation of a deep learning network to identify 102 different types of flowers, developed for the [Facebook PyTorch Scholarship Challenge](https://www.udacity.com/facebook-pytorch-scholarship). After this 2-month selection process, 300 scholars were selected among 10,000, from 149 different countries, and this project is one of the reasons why I got awarded a full scholarship by Facebook AI for Udacity's 4-month Deep Learning Nanodegree.
-<img src="images/congratulations.jpg" width=300>
+
+<p align="center">
+  <img src="images/congratulations.jpg" width=500>
+</p>
 
 ## 1. Problem to solve
 
@@ -42,5 +45,7 @@ Data file structure:
     - Test trained model on testing set (93% accuracy)
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
-
-<img src="images/inference_example.png" width=300>
+    
+<p align="center">
+  <img src="images/inference_example.png" width=300>
+</p>
