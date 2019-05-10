@@ -1,10 +1,14 @@
 # Flower classification
 
-This project uses convolutional neural network to train an image classifier that is able to identify 102 different flower species with 93% testing accuracy. This image classifier can be used to identify flower species from new images, e.g., in a phone app that tells you the name of the flower your camera is looking at.
+PyTorch implementation of a deep learning network to identify 102 different types of flowers, developed for the [Facebook PyTorch Scholarship Challenge](https://www.udacity.com/facebook-pytorch-scholarship). After this 2-month selection process, 300 scholars were selected among 10,000, from 149 different countries, and this project is one of the reasons why I got awarded a full scholarship by Facebook AI for Udacity's 4-month Deep Learning Nanodegree.
+
+<p align="center">
+  <img src="images/congratulations.jpg" width=500>
+</p>
 
 ## 1. Problem to solve
 
-Build an application to tell the name of flower from an image.
+This project uses convolutional neural network to train an image classifier that is able to identify 102 different flower species with 99.14% validation accuracy. This image classifier can be used to identify flower species from new images, e.g., in a phone app that tells you the name of the flower your camera is looking at.
 
 ## 2. Available data
 
@@ -13,12 +17,12 @@ Build an application to tell the name of flower from an image.
 Data file structure:
 
 - `flowers`: folder of image data.
-    - `train`, `valid`, `test`: subfolders for training, validating, and testing the image classifier, respectively.
+    - `train`, `valid`: subfolders for training and validating the image classifier, respectively.
         - `1`, `2`, ..., `102`: 102 subfolders whose names indicate different flower categories. Given the large data size, data folders are not included here.
 
 ## 3. What I did
 
-[Main Code](Image_Classifier_Project.ipynb)
+[Main Code](flower_classifier.ipynb)
 
 1. Data loading and data preprocessing
 
@@ -41,5 +45,7 @@ Data file structure:
     - Test trained model on testing set (93% accuracy)
     - Save trained model as checkpoint
     - Write a function that gives top-5 most probable flower names based on image path
-
-<img src="images/inference_example.png" width=300>
+    
+<p align="center">
+  <img src="images/inference_example.png" width=300>
+</p>
